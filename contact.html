@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - هدايا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+
+                <img src="images/logo.jpg" alt="">
+                <span>هدايا</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="services.html">خدمات التغليف</a></li>
+                    <li><a href="blog.html">المدونة</a></li>
+                    <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="theme-toggle">🌙</button>
+                <div class="cart-icon-wrapper">
+                    <button class="cart-btn">
+                        🛒
+                        <span class="cart-counter">0</span>
+                    </button>
+                </div>
+                <div class="auth-buttons">
+                    <button id="loginBtn">تسجيل الدخول</button>
+                    <button id="registerBtn">إنشاء حساب</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Page Content -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>اتصل بنا</h1>
+                <p class="contact-subtitle">نحن هنا لمساعدتك في جعل هداياك مميزة</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>معلومات التواصل</h2>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>عنوان المتجر</h3>
+                            <p>المدينة المنورة، حي العزيزية<br>شارع الملك فهد، مبنى 123</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>هواتف التواصل</h3>
+                            <p>+966 55 123 4567<br>+966 14 765 4321</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@hadiya.com<br>support@hadiya.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h3>أوقات العمل</h3>
+                            <p>الأحد - الخميس: 9 صباحاً - 6 مساءً<br>الجمعة: 4 مساءً - 9 مساءً<br>السبت: إجازة</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <h3>تابعنا على</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">📘 فيسبوك</a>
+                            <a href="#" class="social-link">📷 إنستغرام</a>
+                            <a href="#" class="social-link">🐦 تويتر</a>
+                            <a href="#" class="social-link">📹 يوتيوب</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>أرسل رسالة</h2>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>الاسم الكامل *</label>
+                                <input type="text" placeholder="أدخل اسمك الكامل" required>
+                            </div>
+                            <div class="form-group">
+                                <label>البريد الإلكتروني *</label>
+                                <input type="email" placeholder="example@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>موضوع الرسالة *</label>
+                            <input type="text" placeholder="موضوع الرسالة" required>
+                        </div>
+                        <div class="form-group">
+                            <label>نوع الاستفسار *</label>
+                            <select required>
+                                <option value="">اختر نوع الاستفسار</option>
+                                <option value="products">استفسار عن المنتجات</option>
+                                <option value="services">استفسار عن الخدمات</option>
+                                <option value="order">متابعة طلب</option>
+                                <option value="complaint">شكوى أو اقتراح</option>
+                                <option value="partnership">شراكة أو تعاون</option>
+                                <option value="other">استفسار آخر</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>الرسالة *</label>
+                            <textarea placeholder="اكتب رسالتك هنا..." rows="6" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>كيف سمعت عنا؟</label>
+                            <select>
+                                <option value="">اختر الوسيلة</option>
+                                <option value="search">محرك البحث</option>
+                                <option value="social">وسائل التواصل الاجتماعي</option>
+                                <option value="friend">صديق</option>
+                                <option value="ad">إعلان</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- FAQ Quick Links -->
+            <div class="faq-quick-links">
+                <h2>أسئلة متكررة</h2>
+                <div class="faq-links-grid">
+                    <a href="#" class="faq-link">
+                        <div class="faq-link-icon">🚚</div>
+                        <div class="faq-link-content">
+                            <h3>معلومات التوصيل</h3>
+                            <p>تعرف على مناطق التوصيل وأوقاتها</p>
+                        </div>
+                    </a>
+                    <a href="#" class="faq-link">
+                        <div class="faq-link-icon">💳</div>
+                        <div class="faq-link-content">
+                            <h3>طرق الدفع</h3>
+                            <p>الدفع عند الاستلام والدفع الإلكتروني</p>
+                        </div>
+                    </a>
+                    <a href="#" class="faq-link">
+                        <div class="faq-link-icon">📦</div>
+                        <div class="faq-link-content">
+                            <h3>سياسة الإرجاع</h3>
+                            <p>شروط وإجراءات إرجاع المنتجات</p>
+                        </div>
+                    </a>
+                    <a href="#" class="faq-link">
+                        <div class="faq-link-icon">🎨</div>
+                        <div class="faq-link-content">
+                            <h3>خدمات مخصصة</h3>
+                            <p>كيفية طلب تصاميم مخصصة</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2>موقعنا على الخريطة</h2>
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <div class="map-icon">📍</div>
+                        <div class="map-info">
+                            <h3>فرع المدينة المنورة</h3>
+                            <p>حي العزيزية، شارع الملك فهد</p>
+                            <p>أوقات العمل: 9AM - 6PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>لست متأكداً من ما تحتاجه؟</h2>
+                <p>اتصل بنا وسنساعدك في اختيار أفضل حل لتغليف هداياك</p>
+                <div class="cta-actions">
+                    <a href="tel:+966551234567" class="cta-button phone">
+                        📞 اتصل بنا الآن
+                    </a>
+                    <a href="https://wa.me/966551234567" class="cta-button whatsapp" target="_blank">
+                        💬 راسلنا على واتساب
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>هدايا</h3>
+                    <p>متجر متخصص في تغليف الهدايا بتصاميم فريدة</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>اتصل بنا</h4>
+                    <p>الهاتف: 0551234567</p>
+                    <p>البريد: info@hadiya.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 هدايا. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="كلمة المرور" required>
+                </div>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox"> تذكرني
+                    </label>
+                    <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                </div>
+                <button type="submit">تسجيل الدخول</button>
+                <p class="switch-form">ليس لديك حساب؟ <a href="#" id="switchToRegister">إنشاء حساب</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>إنشاء حساب جديد</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <input type="text" placeholder="الاسم الكامل" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="رقم الجوال" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="كلمة المرور" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="تأكيد كلمة المرور" required>
+                </div>
+                <label class="terms">
+                    <input type="checkbox" required>
+                    أوافق على <a href="#">شروط الخدمة</a> و <a href="#">سياسة الخصوصية</a>
+                </label>
+                <button type="submit">إنشاء حساب</button>
+                <p class="switch-form">لديك حساب بالفعل؟ <a href="#" id="switchToLogin">تسجيل الدخول</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات - هدايا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+
+                <img src="images/logo.jpg" alt="">
+                <span>هدايا</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html" class="active">المنتجات</a></li>
+                    <li><a href="services.html">خدمات التغليف</a></li>
+                    <li><a href="blog.html">المدونة</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="theme-toggle">🌙</button>
+                <div class="cart-icon-wrapper">
+                    <button class="cart-btn">
+                        🛒
+                        <span class="cart-counter">0</span>
+                    </button>
+                </div>
+                <div class="auth-buttons">
+                    <button id="loginBtn">تسجيل الدخول</button>
+                    <button id="registerBtn">إنشاء حساب</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Page Content -->
+    <section class="products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>منتجاتنا</h1>
+                <p>اكتشف مجموعة واسعة من منتجات التغليف المناسبة لجميع المناسبات</p>
+            </div>
+
+            <!-- Search and Filters -->
+            <div class="products-controls">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="ابحث عن منتج، فئة، أو وصف...">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <div class="filters">
+                    <select id="categoryFilter">
+                        <option value="">جميع الفئات</option>
+                        <option value="wrapping">أوراق التغليف</option>
+                        <option value="ribbons">أشرطة وزينة</option>
+                        <option value="cards">بطاقات</option>
+                    </select>
+                    <select id="priceFilter">
+                        <option value="">جميع الأسعار</option>
+                        <option value="0-20">حتى 20 ريال</option>
+                        <option value="21-50">21 - 50 ريال</option>
+                        <option value="51-100">51 - 100 ريال</option>
+                    </select>
+                    <select id="sortFilter">
+                        <option value="">ترتيب حسب</option>
+                        <option value="price-asc">السعر: من الأقل للأعلى</option>
+                        <option value="price-desc">السعر: من الأعلى للأقل</option>
+                        <option value="name">الاسم: أ-ي</option>
+                        <option value="featured">الأكثر طلباً</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Search Results Info -->
+            <div class="search-results-info" style="display: none;"></div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- المنتجات سيتم تحميلها ديناميكياً -->
+            </div>
+
+            <!-- Loading State -->
+            <div class="loading-state" style="display: none;">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>جاري تحميل المنتجات...</p>
+                </div>
+            </div>
+
+            <!-- No Results State -->
+            <div class="no-results" style="display: none;">
+                <div class="no-results-content">
+                    <div class="no-results-icon">🔍</div>
+                    <h3>لم نعثر على منتجات</h3>
+                    <p>جرب تعديل عوامل التصفية أو البحث بمصطلحات أخرى</p>
+                    <button class="reset-filters">إعادة تعيين الفلاتر</button>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="products-stats">
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">منتج متوفر</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">فئة مختلفة</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8 - 45</span>
+                    <span class="stat-label">نطاق الأسعار</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Banner -->
+    <section class="features-banner">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🚚</div>
+                    <div class="feature-content">
+                        <h3>توصيل سريع</h3>
+                        <p>توصيل خلال 24 ساعة في المدينة المنورة</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💳</div>
+                    <div class="feature-content">
+                        <h3>دفع آمن</h3>
+                        <p>طرق دفع متعددة وآمنة</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">↩️</div>
+                    <div class="feature-content">
+                        <h3>إرجاع سهل</h3>
+                        <p>سياسة إرجاع لمدة 7 أيام</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-content">
+                        <h3>تصاميم حصرية</h3>
+                        <p>تصاميم فريدة لا تجدها ailleurs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>اشترك في نشرتنا البريدية</h2>
+                <p>كن أول من يعرف عن عروضنا الخاصة وتصاميمنا الجديدة</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="بريدك الإلكتروني" required>
+                    <button type="submit">اشترك الآن</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">🎁</div>
+                        <span>هدايا</span>
+                    </div>
+                    <p>متجر متخصص في تغليف الهدايا بتصاميم فريدة وأنيقة تناسب جميع المناسبات</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 فيسبوك</a>
+                        <a href="#" class="social-link">📷 إنستغرام</a>
+                        <a href="#" class="social-link">🐦 تويتر</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="blog.html">المدونة</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>خدماتنا</h4>
+                    <ul>
+                        <li><a href="services.html">تغليف الهدايا</a></li>
+                        <li><a href="services.html">تغليف الشركات</a></li>
+                        <li><a href="services.html">تصاميم مخصصة</a></li>
+                        <li><a href="services.html">استشارات التغليف</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>اتصل بنا</h4>
+                    <div class="contact-info">
+                        <p>📍 المدينة المنورة، السعودية</p>
+                        <p>📞 0551234567</p>
+                        <p>✉️ info@hadiya.com</p>
+                        <p>🕒 الأحد - الخميس: 9AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 هدايا. جميع الحقوق محفوظة | تم التطوير بواسطة فريق هدايا</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="كلمة المرور" required>
+                </div>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox"> تذكرني
+                    </label>
+                    <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                </div>
+                <button type="submit">تسجيل الدخول</button>
+                <p class="switch-form">ليس لديك حساب؟ <a href="#" id="switchToRegister">إنشاء حساب</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>إنشاء حساب جديد</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <input type="text" placeholder="الاسم الكامل" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="رقم الجوال" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="كلمة المرور" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="تأكيد كلمة المرور" required>
+                </div>
+                <label class="terms">
+                    <input type="checkbox" required>
+                    أوافق على <a href="#">شروط الخدمة</a> و <a href="#">سياسة الخصوصية</a>
+                </label>
+                <button type="submit">إنشاء حساب</button>
+                <p class="switch-form">لديك حساب بالفعل؟ <a href="#" id="switchToLogin">تسجيل الدخول</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
